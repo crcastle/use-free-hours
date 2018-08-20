@@ -1,0 +1,7 @@
+{
+  "name": "use-free-hours",
+  "description": "Use up Heroku free dyno hours",
+  "addons": [
+    "scheduler"
+  ]
+}

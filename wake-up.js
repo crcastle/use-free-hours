@@ -5,4 +5,6 @@ if (process.env.HEROKU_APP_NAME) {
     .then(res => res.text())
     .then(body => console.log(body))
     .catch(err => console.error(err));
+} else {
+  console.log("Cannot determine heroku app name. Maybe you need to run `heroku labs:enable runtime-dyno-metadata -a <app name>`?");
 }
